@@ -12,9 +12,16 @@ class Person{
         this.lastname = lastname;
 
     }
+    fullname(){
+        console.log('Hey ',this.firstname + ' '+ this.lastname);
+    }
+    // compliment(firstname, lastname){
+    //     return "Hello "+firstname,+lastname; 
+    // }
+
 }
-let p = new Person('Bessingi','Naura')
-let t = new Person('Nguessong','Suzy')
-console.log('Hello ', p.firstname, p.lastname)
-console.log('Hello ', t.firstname, t.lastname)
-   
+ let p = new Person('Bessingi','Naura')
+ let t = new Person('Nguessong','Suzy')
+
+p.fullname();
+t.fullname();
